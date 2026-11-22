@@ -1,0 +1,47 @@
+/* Halcyon Heist — the page around the canvas. The game itself is drawn
+   on the canvas; this only centres it and keeps it readable. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0f1a;
+  color: #eef1f5;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+canvas {
+  width: min(1280px, 100%);
+  height: auto;
+  display: block;
+  background: #0d0f1a;
+  border: 1px solid #2e3352;
+  border-radius: 8px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+}
+
+.hint {
+  margin: 0;
+  font-size: 13px;
+  color: #9aa3b8;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
